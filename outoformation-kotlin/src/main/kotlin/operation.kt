@@ -31,7 +31,7 @@ fun main(){
     }
     for (i in 1..10 step 2){
         println("Counter $i")
-    }*/
+    }
     for(item in 1..10){
         println("hello")
         if(item==8){

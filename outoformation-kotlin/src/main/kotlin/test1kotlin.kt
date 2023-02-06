@@ -6,7 +6,7 @@ import java.time.Year
 
 fun main() {
     //ex1
-    println("hello iman")
+    /*println("hello iman")
     print("Enter your Name ::>")
     var name:String= readLine()!!
     println(name)
@@ -21,10 +21,10 @@ fun main() {
 
     print("Enter your Title ::>")
     var title:String?= readLine()
-    println(title)
+    println(title)*/
 
     //ex2 convert data type
-    var strInt:String="1234"
+    /*var strInt:String="1234"
     var intStr:Int=strInt.toInt()
     var a:Int=1
     var k:Int=12
@@ -33,7 +33,7 @@ fun main() {
     println(intStr+a)
     println(m+"="+reulta)*/
     //ex3 operation
-    print("---------calcule--------")
+    /*print("---------calcule--------")
     println("donner valeur de a")
     var a:Int= readLine()!!.toInt()
     println("valeur de a est:$a")
@@ -41,7 +41,7 @@ fun main() {
     var b:Int= readLine()!!.toInt()
     println("valeur de a est:$b")
     var c=a+b
-    println("la somme est:$c")
+    println("la somme est:$c")*/
 
 
 }
