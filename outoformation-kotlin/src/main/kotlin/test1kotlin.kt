@@ -21,7 +21,11 @@ fun main() {
 
     print("Enter your Title ::>")
     var title:String?= readLine()
-    println(title)*/
+    println(title)
+    var k:Double=5.0;
+    var m:Double=2.0;
+    var d:Double=k/m;
+    println(d)*/
 
     //ex2 convert data type
     /*var strInt:String="1234"
