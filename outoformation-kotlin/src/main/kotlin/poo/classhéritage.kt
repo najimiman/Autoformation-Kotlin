@@ -16,7 +16,7 @@ class Mulperation():Operation(){
         return  a/b
     }
 }
-fun main(){
+fun function.main(){
     var a=Operation()
     println(a.sum(1,3))
     println(a.div(4,2))

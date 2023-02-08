@@ -20,7 +20,7 @@ class Muloperation():Operation(){
         return  a/b+2
     }
 }
-fun main(){
+fun function.main(){
     var a=Operation()
     println(a.sum(1,3))
     println(a.div(4,2))

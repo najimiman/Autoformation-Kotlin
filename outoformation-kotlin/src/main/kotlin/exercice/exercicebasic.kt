@@ -6,6 +6,6 @@ fun main(){
         for(i in 1..index +1){
             print("*")
         }
-        println("\n")
+        println()
     }
 }
