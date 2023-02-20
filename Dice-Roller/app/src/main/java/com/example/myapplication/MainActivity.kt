@@ -18,10 +18,7 @@ class MainActivity : AppCompatActivity() {
         //textView1.setText("6")
         Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT).show()
         Roledice()
-
     }
-
-
 
     private fun Roledice() {
         val dice=Dice(6)
@@ -29,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         var textView1=findViewById<TextView>(R.id.textView)
         textView1.setText(dicerole.toString())
         var imageview:ImageView=findViewById(R.id.imageView)
+
+
       /* when(dicerole){
            1->imageview.setImageResource(R.drawable.dice_1)
            2->imageview.setImageResource(R.drawable.dice_2)
@@ -38,6 +37,7 @@ class MainActivity : AppCompatActivity() {
            6->imageview.setImageResource(R.drawable.dice_6)
 
        }*/
+
         val drawableResource = when (dicerole) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
