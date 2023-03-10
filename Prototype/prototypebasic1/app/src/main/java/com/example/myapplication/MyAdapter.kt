@@ -1,7 +1,5 @@
 package com.example.myapplication
 
-import android.app.Dialog
-import android.content.Context
 import android.content.Intent
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
@@ -12,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 
@@ -59,18 +56,25 @@ class MyAdapter (val listtache:ArrayList<Data>):RecyclerView.Adapter<MyAdapter.V
         holder.delete.setOnClickListener { remove(position) }
 
         holder.edut.setOnClickListener {
-            /*val context: Context
-            var aa=LayoutInflater.from(context)
+            //val context: Context
+            //Toast.makeText(holder.edut.context,"hello",Toast.LENGTH_LONG).show()
+            var aa=LayoutInflater.from(holder.itemView.context)
             var v=aa.inflate(R.layout.update,null)
-            val adddialo=AlertDialog.Builder(context)
-            adddialo.setView(v)
-            val titleInput: EditText = v.findViewById(R.id.nomtacheup)
-            titleInput.setText(data.Nomtache)
-            adddialo.show()*/
-            Toast.makeText(holder.edut.context,"hello",Toast.LENGTH_LONG).show()
-            var otheractivity= Intent(holder.itemView.context,Update::class.java)
-            
+            val adddialo=AlertDialog.Builder(holder.itemView.context)
 
+            val titleInput: EditText = v.findViewById(R.id.nomtacheup)
+            val updateButton:Button = v.findViewById(R.id.updatetachee)
+            titleInput.setText(data.Nomtache)
+
+            updateButton.setOnClickListener {
+                data.Nomtache= titleInput.text.toString()
+                this.notifyItemChanged(position)
+                Toast.makeText(holder.edut.context, "Task Updated", Toast.LENGTH_SHORT).show()
+                //var v1=aa.inflate(R.layout.activity_main,null)
+                adddialo.setCancelable(true)
+            }
+            adddialo.setView(v)
+            adddialo.show()
 }
 
 }
