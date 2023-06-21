@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 
 
@@ -24,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         when(item?.itemId){
             R.id.item1->{
                 Toast.makeText(this,"Login",Toast.LENGTH_LONG).show()
-               //var intent= Intent(this,login::class.java)
-                //startActivity(intent)
+//               var intent= Intent(this,R.layout.login::class.java)
+//                startActivity(intent)
             }
             R.id.item2->{
                 Toast.makeText(this,"Inscription",Toast.LENGTH_LONG).show()
